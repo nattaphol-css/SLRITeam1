@@ -6,7 +6,8 @@ import {
   Icon,
   Thumbnail,
   Right,
-  Button
+  Button,
+  Text
 } from 'native-base'
 import {
   Image
@@ -23,6 +24,11 @@ export default class RottoHeader extends Component{
                <Icon name='menu' />
             </Button>
          </Left>
+         <Body>
+           <Text>
+             Rotto online
+           </Text>
+         </Body>
       </Header>
     );
   }
