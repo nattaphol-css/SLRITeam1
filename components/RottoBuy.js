@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {
-  Image
+  Image,
+  Text
 } from 'react-native'
 import {
   Container,

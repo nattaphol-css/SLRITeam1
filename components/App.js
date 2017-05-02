@@ -51,6 +51,7 @@ export default class App extends Component {
              <Container>
                <RottoHeader onPress={ () => { this.changeStateIsPress() }} myTest={this.state.test} />
                <RottoContent />
+               <RottoBuy />
              </Container>
           </StyleProvider>
       </Drawer>
