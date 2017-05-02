@@ -16,6 +16,7 @@ import {
 
 // Customize Components
 import RottoHeader from './RottoHeader'
+import RottoContent from './RottoContent'
 // import SynFooter from './SynFooter'
 // import SynContent from './SynContent'
 // import SideBar from './SideBar'
@@ -33,7 +34,8 @@ export default class App extends Component {
   render() {
     return (
       <Container>
-        <RottoHeader></RottoHeader>
+        <RottoHeader />
+        <RottoContent />
       </Container>
     );
   }
