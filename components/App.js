@@ -7,19 +7,20 @@ import {
   Button,
   Text
 } from 'native-base';
-//import Drawer from 'react-native-drawer'
+import Drawer from 'react-native-drawer'
 // import { Scene, Router } from 'react-native-router-flux'
 
 // Theme
-//import getTheme from '../native-base-theme/components';
-//import material from '../native-base-theme/variables/material';
+import getTheme from '../native-base-theme/components';
+import material from '../native-base-theme/variables/material';
 
 // Customize Components
 import RottoHeader from './RottoHeader'
 import RottoContent from './RottoContent'
-// import SynFooter from './SynFooter'
-// import SynContent from './SynContent'
-// import SideBar from './SideBar'
+import RottoSideBar from './RottoSideBar'
+import RottoBuy from './RottoBuy'
+
+
 
 export default class App extends Component {
   state = {
@@ -33,10 +34,26 @@ export default class App extends Component {
 
   render() {
     return (
-      <Container>
-        <RottoHeader />
-        <RottoContent />
-      </Container>
+      <Drawer
+        open={this.state.isPress}
+        type="overlay"
+        content={<RottoSideBar />}
+        tapToClose={true}
+        openDrawerOffset={0.2} // 20% gap on the right side of drawer
+        panCloseMask={0.2}
+        closedDrawerOffset={-3}
+        styles={drawerStyles}
+        tweenHandler={(ratio) => ({
+          main: { opacity:(2-ratio)/2 }
+        })}
+        >
+          <StyleProvider style={getTheme(material)}>
+             <Container>
+               <RottoHeader onPress={ () => { this.changeStateIsPress() }} myTest={this.state.test} />
+               <RottoContent />
+             </Container>
+          </StyleProvider>
+      </Drawer>
     );
   }
 }
