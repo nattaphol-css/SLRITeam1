@@ -29,24 +29,84 @@ export default class RottoContent extends Component{
                <Card>
                     <CardItem >
                         <Left>
-                            <Thumbnail source={require('../public/team1.jpg')} />
+                            <Thumbnail source={require('../public/mai.jpg')} />
                             <Body>
-                                <Text>Ajarn Mai</Text>
+                                <Text style={{color: '#FF8800'}}>อ. ใหม่</Text>
                             </Body>
                         </Left>
                     </CardItem>
                     <CardItem>
                             <Body>
-                                <Image style={{ resizeMode: 'cover' }} source={require('../public/n01.jpg')} />
-                                <Text>
-                                    //Your text here
-                                </Text>
+                                <Image style={{ width:'100%'}} source={require('../public/n01.jpg')} />
                                 <Button transparent textStyle={{color: '#87838B'}}>
-                                    <Icon name="logo-github" />
-                                    <Text>1,926 stars</Text>
+                                    <Icon name="eye" />
+                                    <Right >
+                                    <Text style={{color: '#FF0000'}}>4,927</Text>
+                                    <Icon name="star" style={{color: '#FF0000'}}/>
+                                    </Right>
                                 </Button>
                             </Body>
-                        </CardItem>
+                    </CardItem>
+                    <CardItem >
+                        <Left>
+                            <Thumbnail source={require('../public/tao.jpg')} />
+                            <Body>
+                                <Text>อ. เต๋า</Text>
+                            </Body>
+                        </Left>
+                    </CardItem>
+                    <CardItem>
+                            <Body>
+                                <Image style={{ width:'100%'}} source={require('../public/n02.jpg')} />
+                                <Button transparent textStyle={{color: '#87838B'}}>
+                                    <Icon name="eye" />
+                                    <Right >
+                                    <Text style={{color: '#FF0000'}}>3,946</Text>
+                                    <Icon name="star" style={{color: '#FF0000'}}/>
+                                    </Right>
+                                </Button>
+                            </Body>
+                    </CardItem>
+                    <CardItem >
+                        <Left>
+                            <Thumbnail source={require('../public/toy.jpg')} />
+                            <Body>
+                                <Text>อ. ต้อย</Text>
+                            </Body>
+                        </Left>
+                    </CardItem>
+                    <CardItem>
+                            <Body>
+                                <Image style={{width:'100%'}} source={require('../public/n03.jpg')} />
+                                <Button transparent textStyle={{color: '#87838B'}}>
+                                    <Icon name="eye" />
+                                    <Right >
+                                    <Text style={{color: '#FF0000'}}>2,826</Text>
+                                    <Icon name="star" style={{color: '#FF0000'}}/>
+                                    </Right>
+                                </Button>
+                            </Body>
+                    </CardItem>
+                    <CardItem >
+                        <Left>
+                            <Thumbnail source={require('../public/nut.jpg')} />
+                            <Body>
+                                <Text>อ. นัท</Text>
+                            </Body>
+                        </Left>
+                    </CardItem>
+                    <CardItem>
+                            <Body>
+                                <Image style={{ width:'100%'}} source={require('../public/n04.jpg')} />
+                                <Button transparent textStyle={{color: '#87838B'}}>
+                                    <Icon name="eye" />
+                                    <Right >
+                                    <Text style={{color: '#FF0000'}}>1,956</Text>
+                                    <Icon name="star" style={{color: '#FF0000'}}/>
+                                    </Right>
+                                </Button>
+                            </Body>
+                    </CardItem>
                </Card>
             </Content>
         </Container>
